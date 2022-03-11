@@ -1,7 +1,7 @@
 ## Interface: 20502
 ## Title: Sync Friends and Ignores
 ## Author: Ravilan
-## Version: 1.0.0
+## Version: 0.0.1
 ## Notes: Sync your friends and ignores between your characters.
 ## DefaultState: Enabled
 ##SavedVariables: FRIENDS_AND_IGNORES
