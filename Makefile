@@ -1,6 +1,6 @@
 .PHONY: release
 
-ADDON_NAME := synch-friends-and-ignores-bc
+ADDON_NAME := sync-friends-and-ignores-bc
 RELEASE_ZIP_NAME := $(ADDON_NAME).zip
 
 release:
