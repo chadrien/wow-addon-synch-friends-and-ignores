@@ -9,7 +9,7 @@ ifndef VERSION
 endif
 	@git diff --quiet; \
 		[ $$? -eq 0 ] || { echo "There are uncommitted changes."; exit 1; }
-	@rsync -a . $(ADDON_NAME) --exclude $(ADDON_NAME) --exclude .git --exclude .gitignore --exclude Makefile --exclude README.md --exclude assets
+	@rsync -a . $(ADDON_NAME) --exclude $(ADDON_NAME) --exclude .git --exclude .gitignore --exclude Makefile --exclude README.md --exclude assets --exclude .editorconfig
 	@zip -r $(RELEASE_ZIP_NAME) $(ADDON_NAME) -q
 	@git tag $(VERSION)
 	@gh release create $(VERSION) $(RELEASE_ZIP_NAME) --notes ""
