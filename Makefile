@@ -1,7 +1,7 @@
 .PHONY: release
 
-ADDON_NAME := sync-friends-and-ignores-bc
-RELEASE_ZIP_NAME := $(ADDON_NAME).zip
+ADDON_NAME := SyncFriendsAndIgnores
+RELEASE_ZIP_NAME := $(ADDON_NAME)-bc.zip
 
 release:
 ifndef VERSION
